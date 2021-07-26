@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Install deps
-        run: sudo apt-get install libsilo-dev openmpi-bin libopenmpi-dev
+        run: sudo apt-get update && udo apt-get install libsilo-dev openmpi-bin libopenmpi-dev
