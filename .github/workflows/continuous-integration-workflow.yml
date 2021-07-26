@@ -1,0 +1,12 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  CI:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Install deps
+        run: sudo apt-get install libsilo-dev openmpi-bin libopenmpi-dev
